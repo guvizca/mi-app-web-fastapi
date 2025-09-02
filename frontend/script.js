@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000'; // URL de tu API local
+const API_BASE_URL = 'https://nombre-de-tu-api-en-render.onrender.com'; // URL de tu API local
 
 // Función para obtener el mensaje del endpoint raíz
 document.getElementById('getMessageBtn').addEventListener('click', async () => {
