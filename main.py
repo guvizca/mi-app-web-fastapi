@@ -6,7 +6,7 @@ app = FastAPI()
 
 # Configuración de CORS para permitir peticiones desde el frontend
 origins = [
-    "https://nombre-de-tu-api-en-render.onrender.com", # Puerto donde correrá el frontend local
+    "https://mi-app-web-fastapi.onrender.com", # Puerto donde correrá el frontend local
     # Cuando despliegues el frontend, agrega aquí su URL (ej. "https://mi-frontend.vercel.app")
 ]
 
