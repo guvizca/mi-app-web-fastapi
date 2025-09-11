@@ -6,8 +6,9 @@ app = FastAPI()
 
 # Configuración de CORS para permitir peticiones desde el frontend
 origins = [
-    "https://mi-app-web-fastapi.onrender.com", # Puerto donde correrá el frontend local
-    # Cuando despliegues el frontend, agrega aquí su URL (ej. "https://mi-frontend.vercel.app")
+    "http://localhost",  # Para pruebas locales
+    "https://mi-app-web-fastapi.onrender.com",  # La URL de tu API
+    "https://guvizca.github.io/tu-repositorio-del-frontend" # **IMPORTANTE**: Aquí debes poner la URL de tu front-end en GitHub Pages
 ]
 
 app.add_middleware(
