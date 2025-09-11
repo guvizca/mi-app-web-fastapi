@@ -1,13 +1,12 @@
-const API_BASE_URL = 'https://mi-app-web-fastapi.onrender.com'; // URL de tu API local
+const API_BASE_URL = 'https://mi-app-web-fastapi.onrender.com';
 
-// Función para obtener el mensaje del endpoint raíz
+// El resto de tu código para las llamadas a la API
 document.getElementById('getMessageBtn').addEventListener('click', async () => {
     const response = await fetch(`${API_BASE_URL}/`);
     const data = await response.json();
     document.getElementById('rootMessage').textContent = `La API responde: ${data.message}`;
 });
 
-// Función para saludar a una persona
 document.getElementById('greetNameBtn').addEventListener('click', async () => {
     const name = document.getElementById('nameInput').value;
     const response = await fetch(`${API_BASE_URL}/saludo/${name}`);
